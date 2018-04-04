@@ -25,14 +25,20 @@ var config = {
                 ]
               },
               {
-                test: /\.js$/,
+                test: /\.js?$/,
                 exclude: /node_modules/,
-                use: "babel-loader"
+                loader: "babel-loader",
+                options: {
+                    presets: ['react']
+                }
               },
               {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                use: "babel-loader"
+                loader: "babel-loader",
+                options: {
+                    presets: ['react']
+                }
               }
         ]
     },
