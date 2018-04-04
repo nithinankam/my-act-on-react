@@ -8,6 +8,12 @@ export class Home extends React.Component {
             age: props.initialAge,
             status: 0
         };
+        // go to rendering option in console and select #paint flashing to see the rendering difference 
+        setTimeout(()=>{
+            this.setState({
+                status: 1
+            })
+        }, 3000)
     }
     onMakeOlder() {
         this.setState({
