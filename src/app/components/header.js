@@ -13,6 +13,5 @@ export class Header extends React.Component {
                 </div>
             </nav>
         )
-
     }
 }
